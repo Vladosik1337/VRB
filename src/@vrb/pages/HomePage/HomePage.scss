@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  background-color: #faf8f8;
+}
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 16px;
+
+  @media screen and (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input {
+  width: 500px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
